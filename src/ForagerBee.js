@@ -17,9 +17,8 @@ var ForagerBee = function() {
 
 
 
-ForagerBee.prototype = Object.create(Grub);
+ForagerBee.prototype = Object.create(Grub.prototype);
 
-ForagerBee.prototype.eat = function(){};
 
 ForagerBee.prototype.constructor = ForagerBee;
 

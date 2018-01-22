@@ -17,7 +17,7 @@ var RetiredForagerBee = function() {
 
 
 
-RetiredForagerBee.prototype = Object.create(Grub);
+RetiredForagerBee.prototype = Object.create(Grub.prototype);
 
 RetiredForagerBee.prototype.constructor = RetiredForagerBee;
 
@@ -25,7 +25,6 @@ RetiredForagerBee.prototype.forage = function() {
   return "I am too old, let me play cards instead"
 };
 
-RetiredForagerBee.prototype.eat = function(){};
 
 RetiredForagerBee.prototype.gamble = function(win) {
   this.treasureChest.push(win);

@@ -9,11 +9,10 @@ var HoneyMakerBee = function() {
 };
 
 
-HoneyMakerBee.prototype = Object.create(Grub); // have methods/property from Grub
+HoneyMakerBee.prototype = Object.create(Grub.prototype); // have methods/property from Grub
 
 HoneyMakerBee.prototype.constructor = HoneyMakerBee;
 
-HoneyMakerBee.prototype.eat = function(){};
 
 HoneyMakerBee.prototype.makeHoney = function() {
   this.honeyPot++; // should only point to this HoneyMakers Honey Pot
